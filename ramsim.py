@@ -10,7 +10,7 @@ rams = RAMS[['Year','Tm','W','L','T','MoV','SoS','SRS','OSRS','DSRS']]
 
 def game_sim(homeyear, awayyear, p=True):
     '''
-    Takes a home and away team SRS and spits out a normal random variable
+    Takes a home and away year, simulates a game and spits out a result
     '''
     homerow = rams[rams['Year'] == homeyear]
     awayrow = rams[rams['Year'] == awayyear]
